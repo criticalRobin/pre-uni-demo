@@ -4,75 +4,46 @@ import TeamCard from "../ui/TeamCard.astro";
 import Section from "./Section.astro";
 
 const description =
-  "Meet the skilled and experienced team behind our successful digital marketing strategies";
+  "Conoce a nuestro equipo de docentes altamente capacitados, listos para ayudarte a alcanzar tu máximo potencial.";
 
 import {
   default as p1,
   default as p2,
   default as p3,
-  default as p4,
-  default as p5,
-  default as p6,
 } from "../../assets/pics/profile-pic.png";
 
 const team = [
   {
     pic: p1,
-    name: "Maria Katz",
-    role: "CEO",
+    name: "Dra. Laura Fernández",
+    role: "Directora Académica",
     description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
-    link: "https://linkedin.com",
+      "Más de 10 años de experiencia en educación preuniversitaria. Especialista en estrategias de aprendizaje efectivas.",
+    link: "#",
   },
   {
     pic: p2,
-    name: "Maria Katz",
-    role: "CEO",
+    name: "Ing. Carlos Ramírez",
+    role: "Profesor de Matemáticas",
     description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
-    link: "https://linkedin.com",
+      "Experto en preparación para exámenes de admisión. Ha ayudado a cientos de estudiantes a mejorar su razonamiento lógico-matemático.",
+    link: "#",
   },
   {
     pic: p3,
-    name: "Maria Katz",
-    role: "CEO",
+    name: "Lic. Ana Torres",
+    role: "Profesora de Lenguaje",
     description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
-    link: "https://linkedin.com",
-  },
-  {
-    pic: p4,
-    name: "Maria Katz",
-    role: "CEO",
-    description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
-    link: "https://linkedin.com",
-  },
-  {
-    pic: p5,
-    name: "Maria Katz",
-    role: "CEO",
-    description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
-    link: "https://linkedin.com",
-  },
-  {
-    pic: p6,
-    name: "Maria Katz",
-    role: "CEO",
-    description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analys",
-    link: "https://linkedin.com",
+      "Especialista en comprensión lectora y razonamiento verbal. Su metodología ha potenciado los resultados de sus alumnos en exámenes oficiales.",
+    link: "#",
   },
 ];
 ---
 
 <Section id="about">
-  <div class="mt-[140px]">
-    <SectionTitle sectionTitle="Team" description={description} />
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10"
-    >
+  <div class="mt-[90px]">
+    <SectionTitle sectionTitle="Equipo" description={description} />
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
       {
         team.map((member, index) => (
           <TeamCard
@@ -87,7 +58,7 @@ const team = [
       }
     </div>
     <div class="flex justify-end mt-10">
-      <button class="btn-primary">See all team</button>
+      <button class="btn-primary">Ver todo el equipo</button>
     </div>
   </div>
 </Section>

@@ -1,11 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import s1 from "../../assets/pics/company-logo1.svg";
-import s2 from "../../assets/pics/company-logo2.svg";
-import s3 from "../../assets/pics/company-logo3.svg";
-import s4 from "../../assets/pics/company-logo4.svg";
-import s5 from "../../assets/pics/company-logo5.svg";
-import s6 from "../../assets/pics/company-logo6.svg";
+import s1 from "../../assets/pics/uta.png";
+import s2 from "../../assets/pics/espoch.png";
+import s3 from "../../assets/pics/epn.jpg";
+import s4 from "../../assets/pics/esforse.jpg";
+import s5 from "../../assets/pics/central.png";
+import s6 from "../../assets/pics/policia.png";
 import Section from "./Section.astro";
 
 const sponsors = [
@@ -14,7 +14,7 @@ const sponsors = [
   { logo: s3, alt: "HubSpot logo" },
   { logo: s4, alt: "Notion logo" },
   { logo: s5, alt: "Netflix logo" },
-  { logo: s6, alt: "Zoom logo" },
+  { logo: s6, alt: "Policia" },
 ];
 ---
 
@@ -24,7 +24,12 @@ const sponsors = [
       sponsors.map((sponsor) => {
         return (
           <div>
-            <Image src={sponsor.logo} alt={sponsor.alt} loading="eager" />
+            <Image
+              src={sponsor.logo}
+              alt={sponsor.alt}
+              loading="eager"
+              class="w-32 h-32 object-contain"
+            />
           </div>
         );
       })

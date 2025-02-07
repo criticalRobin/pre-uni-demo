@@ -13,61 +13,61 @@ import c6 from "../../assets/pics/card-pic6.png";
 const cards = [
   {
     index: 1,
-    titleTop: "Search Engine",
-    titleBottom: "Optimization",
+    titleTop: "Preparación para",
+    titleBottom: "Exámenes de Admisión",
     img: c1,
-    alt: "SEO",
-    link: "https://google.com",
+    alt: "Exámenes de Admisión",
+    link: "#",
   },
   {
     index: 2,
-    titleTop: "Pay-per-click",
-    titleBottom: "advertising",
+    titleTop: "Refuerzo en",
+    titleBottom: "Matemáticas y Ciencias",
     img: c2,
-    alt: "SEO",
-    link: "https://google.com",
+    alt: "Matemáticas y Ciencias",
+    link: "#",
   },
   {
     index: 3,
-    titleTop: "Social Media",
-    titleBottom: "Marketing",
+    titleTop: "Clases de",
+    titleBottom: "Razonamiento Verbal",
     img: c3,
-    alt: "SEO",
-    link: "https://google.com",
+    alt: "Razonamiento Verbal",
+    link: "#",
   },
   {
-    index: 1,
-    titleTop: "Email",
-    titleBottom: "Marketing",
+    index: 4,
+    titleTop: "Simulacros de",
+    titleBottom: "Exámenes Oficiales",
     img: c4,
-    alt: "SEO",
-    link: "https://google.com",
+    alt: "Simulacros de Exámenes",
+    link: "#",
   },
   {
-    index: 2,
-    titleTop: "Content",
-    titleBottom: "Creation",
+    index: 5,
+    titleTop: "Asesoría en",
+    titleBottom: "Orientación Vocacional",
     img: c5,
-    alt: "SEO",
-    link: "https://google.com",
+    alt: "Orientación Vocacional",
+    link: "#",
   },
   {
-    index: 3,
-    titleTop: "Analytics and",
-    titleBottom: "Tracking",
+    index: 6,
+    titleTop: "Técnicas de",
+    titleBottom: "Estudio Efectivo",
     img: c6,
-    alt: "SEO",
-    link: "https://google.com",
+    alt: "Técnicas de Estudio",
+    link: "#",
   },
 ];
 
 const description =
-  "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include";
+  "En nuestro preuniversitario, ofrecemos programas diseñados para maximizar tu rendimiento académico y asegurar tu ingreso a la universidad. Descubre nuestros servicios:";
 ---
 
-<Section>
-  <div class="mt-[140px] mb-5">
-    <SectionTitle sectionTitle="Services" description={description} />
+<Section id="services">
+  <div class="mt-[90px] mb-5">
+    <SectionTitle sectionTitle="Servicios" description={description} />
     <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
       {
         cards.map((card) => (

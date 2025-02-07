@@ -15,7 +15,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
           name="checkbox1"
           class="form-checkbox text-black"
         />
-        <label for="checkbox1" class="text-black">Say Hi</label>
+        <label for="checkbox1" class="text-black">Saludanos</label>
       </div>
       <div class="flex items-center gap-[14px]">
         <input
@@ -25,13 +25,13 @@ import decorForm from "../../assets/pics/contact-pic.png";
           class="form-checkbox text-black"
         />
         <label for="checkbox2" class="flex items-center text-black"
-          >Get a Quote</label
+          >Cotizar</label
         >
       </div>
     </div>
 
     <div class="mb-4">
-      <label for="name" class="block text-black mb-2">Name*</label>
+      <label for="name" class="block text-black mb-2">Nombre*</label>
       <input
         type="text"
         id="name"
@@ -42,7 +42,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
     </div>
 
     <div class="mb-4">
-      <label for="email" class="block text-black mb-2">Email*</label>
+      <label for="email" class="block text-black mb-2">Correo*</label>
       <input
         type="email"
         id="email"
@@ -53,7 +53,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
     </div>
 
     <div class="mb-4">
-      <label for="message" class="block text-black mb-2">Message*</label>
+      <label for="message" class="block text-black mb-2">Mensaje*</label>
       <textarea
         id="message"
         name="message"
@@ -62,7 +62,9 @@ import decorForm from "../../assets/pics/contact-pic.png";
       ></textarea>
     </div>
 
-    <button type="submit" name="submit" class="btn-primary w-full">Send</button>
+    <button type="submit" name="submit" class="btn-primary w-full"
+      >Enviar</button
+    >
   </form>
   <picture class="absolute right-[-25%] top-[2%] bottom-[2%] hidden lg:block">
     <Image src={decorForm} alt="decor" />
@@ -111,7 +113,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
         if (cb2.checked) {
           cb1.checked = false;
           message.value =
-            "We're interested in your services! Please contact us";
+            "Hola estoy interesado en ser parte de su preuniversitario";
         } else {
           message.value = "";
           cb1.checked = true;
@@ -124,7 +126,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
         } else {
           cb2.checked = true;
           message.value =
-            "We're interested in your services! Please contact us";
+            "Hola estoy interesado en ser parte de su preuniversitario";
         }
       });
     }

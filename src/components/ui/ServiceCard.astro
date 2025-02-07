@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Card from "./Card.astro";
 
-import gob from "../../assets/icon6.svg";
+import gob from "../../assets/icon8.svg";
 import wob from "../../assets/icon7.svg";
 
 /* 
@@ -38,7 +38,7 @@ const { index, titleTop, titleBottom, img, alt, link } = Astro.props;
     <div class="flex items-end">
       <a href={link} class="flex items-center gap-3.5"
         ><Image src={index === 1 || index === 2 ? gob : wob} alt={alt} />
-        <span class="hidden sm:block">Service Info</span></a
+        <span class="hidden sm:block">Más Información</span></a
       >
     </div>
   </div>
